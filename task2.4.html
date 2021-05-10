@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+
+<style>
+body
+  {  
+  font-family: Calibri, sans-serif;  
+  background-color: lightblue; 
+   }  
+   
+hr 
+{  
+  border: 1px solid rgb(10, 9, 12);  
+  margin-bottom: 25px;  
+}  
+.A{
+    padding: 50px;  
+  background-color: linen ;  
+}
+
+input[type=text], input[type=password],textarea
+{
+    width: 100%;
+    padding: 15px;
+    margin: 6px 0px 24px 0px;
+    display: inline-block;
+    background: white; 
+    border:none;
+}
+div{
+    padding: 10px 0;
+}
+ 
+ .register{
+   background:green;
+   color:white;
+   padding: 16px 18px;
+   width: 100%;
+   margin: auto;
+ }
+ .register:hover{
+   opacity: 2;
+ }
+ h4,h1 {
+  color: green;
+}
+</style>
+</head>
+<body>
+    <form>
+        <div class="A">  
+            <center>  <h1>  Registeration Form</h1> </center>  
+            <hr>  
+        <label for="fname"><h4>FirstName</h4></label>
+        <input type="text" id="fname" name="fname" placeholder="Type Your First Name" required>
+        <label for="fname"><h4>lastname</h4></label>
+        <input type="text" id="lname" name="lname"placeholder="Type Your Last Name"><br>
+        <label for="DOB"><h4>Date of Birth</h4></label><br>
+        <input type="date" id="DOB" name="DOB" required><br>
+        <label for="State"><h4>State</h4></label>
+        <select>
+            <option value="State" >TamilNadu</option>
+            <option value="State" >karnataka</option>
+            <option value="State" >Kerala</option>
+            <option value="State" >Andra</option>
+         </select><br>
+        
+      <div>
+        <label for="email" >Email</h4></label><br>
+        <input type="email" id="email" name="email" placeholder="someone@example.com"><br>
+        <label for="password"><h4>password</h4></label><br>
+        <input type="password" id="password" name="password" autocomplete="off"><message>Password must be at least 8 characters long</messagebr>
+        <label for="phone"><h4>Enter your phone number:</h4></label>
+        <input type="tel" id="phone" name="phone"><br>
+
+       <label for="Address"><h4>Enter your address:</h4></label>
+      <textarea rows="5" cols="30"   Placeholder="Current Address" Value="Address" required></textarea>
+      <input type="checkbox" name="Permanent address" id="Permanent address" value="Permanent address">
+      <label for="permanent address">Permanent Address is same as current address</label>
+      </div>
+       
+<div>
+       <label for="Gender"><h4>Gender</h4></label><br>   
+       <input type="radio" id="Male" name="Gender" value="Male">
+       <label for="Male">Male</label><br>
+       <input type="radio" id="Female" name="Gender" value="Female">
+       <label for="Female">Female</label><br>
+       <input type="radio" id="other" name="Gender" value="other">
+       <label for="other">Other</label><br>
+
+</div>
+       <div>  
+        <label for="Course"> <h4>Course : </h4></label>   
+          
+        <select>  
+        <option value="Course">Course</option>  
+        <option value="BCA">BCA</option>  
+        <option value="BBA">B.E</option>  
+        <option value="B.Tech">B.Tech</option>  
+        <option value="MBA">MBA</option>  
+        <option value="MCA">MCA</option>  
+        <option value="M.Tech">M.Tech</option>  
+        </select>  <br>
+       
+        <label for="year of passing"><h4>Year of passing</h4></label><br>
+        <input type="month" id="Year of Passing" name="Year of passing"><br>
+</div>
+
+<label for="job"><h4>Job Role:</h4></label>
+<select id="job" name="user_job">
+  <optgroup label="Web">
+    <option value="frontend_developer">Front-End Developer</option>
+    <option value="php_developor">PHP Developer</option>
+    <option value="python_developer">Python Developer</option>
+    <option value="rails_developer"> Rails Developer</option>
+    <option value="web_designer">Web Designer</option>
+    <option value="WordPress_developer">WordPress Developer</option>
+  </optgroup>
+  <optgroup label="Mobile">
+    <option value="Android_developer">Androild Developer</option>
+    <option value="iOS_developer">iOS Developer</option>
+    <option value="mobile_designer">Mobile Designer</option>
+  </optgroup>
+  <optgroup label="Business">
+    <option value="business_owner">Business Owner</option>
+    <option value="freelancer">Freelancer</option>
+  </optgroup>
+  <optgroup label="Other">
+    <option value="secretary">Secretary</option>
+    <option value="maintenance">Maintenance</option>
+  </optgroup>
+</select> <br>
+
+  <label><h4>Interests:</h4></label><br>
+  <input type="checkbox" id="development" value="interest_development" name="user_interest">
+  <label for="development">Development</label><br>
+  <input type="checkbox" id="design" value="interest_design" name="user_interest">
+  <label  for="design">Design</label><br>
+  <input type="checkbox" id="business" value="interest_business" name="user_interest">
+  <label  for="business">Business</label>
+
+<div>
+       <label for="Languages Known"><h4>Languages</h4></label><br>
+       <input type="checkbox" id="English" name="Language" value="English">
+       <label for="English"> English</label><br>
+       <input type="checkbox" id="Hindi" name="Language" value="Hindi">
+       <label for="Hindi"> Hindi</label><br>
+       <input type="checkbox" id="Tamil" name="Language" value="Tamil">
+       <label for="Tamil"> Tamil</label><br>
+ 
+      <label for="Resume"><h4>Add Your Resume Here</h4></label>
+      <label for="files">Choose files:</label>
+      <input type="file" id="files" name="files" required>
+      <label for="Image"><h4>Add your passport size picture here</h4></label>
+      <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+      <label for="LinkedIn"><h4>Add your LinkedIn account:</h4></label>
+       <input type="url" id="LinkedIn" name="LinkedIn"></body><br>
+</div>
+</div>
+<footer>
+       <button type="submit" class="register">Register</button>
+      
+</footer>
+
+</form>
+</body>
+</html>
